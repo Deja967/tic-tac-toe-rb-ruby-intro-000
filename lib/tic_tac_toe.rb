@@ -133,8 +133,8 @@ end
 
 def play(board)
   input = gets
-  while !over?(board) && !won?(board) && !draw?(board) 
-   turn(board) 
+  while !over?(board) && !won?(board) && !draw?(board)
+   turn(board)
  end
   if won?(board)
     winner(board) == "X" || winner(board) == "O"
