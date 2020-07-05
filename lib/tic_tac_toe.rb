@@ -136,6 +136,7 @@ def play(board)
   until over?(board)
     turn(board)
     current_player(board)
+    break
   end
   if won?(board)
     winner(board) == "X" || winner(board) == "O"
